@@ -13,6 +13,11 @@ public class RotatingRepo{
         System.out.println("Uh oh... rm -rf /");
         return false;
     }
+
+    private static boolean anotherTurn(boolean choice) {
+
+        return false;
+    }
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter one of the correct numbers between 1 and 100");
@@ -27,5 +32,8 @@ public class RotatingRepo{
         }
         
         linearSearch(chosenNumbers, choice);
+
+        Character yesOrNo = input.next();
+
     }
 }
